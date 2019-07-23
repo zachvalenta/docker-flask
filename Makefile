@@ -4,19 +4,19 @@ help:
 	@echo
 	@echo "🍶 FLASK"
 	@echo
-	@echo "flask:    	start app"
-	@echo "index:    	hit index route"
+	@echo "flask:       start app"
+	@echo "index:       hit index route"
 	@echo
 	@echo "🚢 DOCKER"
 	@echo
-	@echo "image:  		build image"
+	@echo "image:       build image"
 	@echo "container:   run container"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
-	@echo "freeze:   	freeze dependencies into requirements.txt"
-	@echo "install:   	install dependencies from requirements.txt"
-	@echo "purge:   	remove any installed pkg *not* in requirements.txt"
+	@echo "freeze:      freeze dependencies into requirements.txt"
+	@echo "install:     install dependencies from requirements.txt"
+	@echo "purge:       remove any installed pkg *not* in requirements.txt"
 	@echo
 
 flask:
