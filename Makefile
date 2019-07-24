@@ -10,7 +10,9 @@ help:
 	@echo "🚢 DOCKER"
 	@echo
 	@echo "image:       build image"
-	@echo "container:   run container"
+	@echo "start:       start container"
+	@echo "stop:        stop container"
+	@echo "restart:     restart container"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
@@ -28,8 +30,14 @@ index:
 image:
 	docker build -t docker-flask-skeleton .
 
-container:
-	docker run -p 5000:5000 docker-flask-skeleton
+start:
+	docker run --name docker-flask-skeleton -p 5000:5000 docker-flask-skeleton
+
+stop:
+	docker stop docker-flask-skeleton; docker ps -a
+
+restart:
+	docker restart docker-flask-skeleton; docker ps
 
 freeze:
 	pip freeze > requirements.txt
