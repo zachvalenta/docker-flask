@@ -1,4 +1,5 @@
 FROM python:3-alpine
+LABEL maintainer Zach Valenta
 COPY . /docker-flask-skeleton
 WORKDIR /docker-flask-skeleton
 RUN python -m pip install -r requirements.txt
