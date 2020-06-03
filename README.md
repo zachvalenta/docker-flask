@@ -20,9 +20,11 @@ make image  # create image
 make container  # run container using image
 ```
 
-To run outside of a container, install Flask into a virtual environment and use the `Makefile`:
-
+Of course, you can still work with the app locally outside of a container by using a virtual environment:
 ```sh
-make flask  # start app
-make index  # hit main app endpoint
+python3 -m venv venv
+source venv/bin/activate
+pip install -q --upgrade pip setuptools wheel
+pip install flask
+make flask
 ```
