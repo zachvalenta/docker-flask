@@ -11,6 +11,14 @@ Most 'hello world' examples of a Dockerized Flask app suffer from one of these p
 
 This repo, on the other hand, aims to be a minimal, viable, and complete, and nothing more.
 
+Just fyi, here are the Docker versions I'm working with:
+
+```sh
+$ docker --version  # Docker version 18.09.2, build 6247962
+$ docker-compose --version  # docker-compose version 1.23.2, build 1110ad01
+$ docker-machine --version  # docker-machine version 0.16.1, build cce350d7
+```
+
 ## how (to run)?
 
 To run as a container, have DockerCE installed and use the `Makefile`:
