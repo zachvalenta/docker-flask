@@ -32,6 +32,9 @@ make start
 
 # hit Flask server running within container
 make index
+
+# stop container
+make stop
 ```
 
 Of course, you can still work with the app locally (outside of a container, on your own operating system) using a virtual environment:
