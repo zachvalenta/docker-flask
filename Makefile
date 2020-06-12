@@ -21,11 +21,19 @@ help:
 	@echo "purge:       remove any installed pkg *not* in requirements.txt"
 	@echo
 
+#
+# 🍶 FLASK
+#
+
 flask:
 	source venv/bin/activate; export FLASK_APP=app; export FLASK_ENV=development; flask run
 
 index:
 	open http://localhost:5000/index
+
+#
+# 🚢 DOCKER
+#
 
 image:
 	docker build -t docker-flask-skeleton .
@@ -38,6 +46,10 @@ stop:
 
 restart:
 	docker restart docker-flask-skeleton; docker ps
+
+#
+# 📦 DEPENDENCIES
+#
 
 freeze:
 	pip freeze > requirements.txt
