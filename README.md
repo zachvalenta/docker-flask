@@ -13,7 +13,7 @@ This repo, on the other hand, aims to be a minimal, viable, and complete, and no
 
 ## FYI
 
-#1 There's a branch to do the same thing but using Poetry as a dependency management tool.
+#1 There's a [branch](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry) to do the same thing but using Poetry as a dependency management tool.
 
 #2 Here are the Docker versions I'm working with:
 
