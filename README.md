@@ -11,7 +11,11 @@ Most 'hello world' examples of a Dockerized Flask app suffer from one of these p
 
 This repo, on the other hand, aims to be a minimal, viable, and complete, and nothing more.
 
-Just fyi, here are the Docker versions I'm working with:
+## FYI
+
+#1 There's a [branch](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry) to do the same thing but using Poetry as a dependency management tool.
+
+#2 Here are the Docker versions I'm working with:
 
 ```sh
 $ docker --version  # Docker version 18.09.2, build 6247962
