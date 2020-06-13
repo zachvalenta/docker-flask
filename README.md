@@ -13,7 +13,7 @@ This repo, on the other hand, aims to be a minimal, viable, and complete, and no
 
 ## FYI
 
-#1 There's a [branch](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry) to do the same thing but using Poetry as a dependency management tool.
+#1 I have [another branch that uses `venv` for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
 
 #2 Here are the Docker versions I'm working with:
 
@@ -41,21 +41,4 @@ make index
 make stop
 ```
 
-Of course, you can still work with the app locally (outside of a container, on your own operating system) using a virtual environment:
-
-```sh
-# create virtual environment
-python3 -m venv venv
-
-# activate virtual environment
-source venv/bin/activate
-
-# update base dependencies
-pip install -q --upgrade pip setuptools wheel
-
-# install Flask
-pip install flask
-
-# hit Flask server running on your OS
-make flask
-```
+Of course, you can still work with the app locally (outside of a container, on your own operating system) by running `poetry install` and starting the server with `make flask`.
