@@ -1,6 +1,6 @@
 # overview
 
-The bare bones 🦴 to start your Dockerized 🚢 Flask 🍶 app 💻
+The bare bones to Dockerize Flask.
 
 ## why (does this exist)?
 
@@ -10,18 +10,6 @@ Most 'hello world' examples of a Dockerized Flask app suffer from one of these p
 * They use the old way of initializing a Flask app (i.e. `if __name__ == '__main__:'`), which harkens from when Flask still didn't have a major version released (prior to 2018).
 
 This repo, on the other hand, aims to be a minimal, viable, and complete, and nothing more.
-
-## FYI
-
-#1 I have [another branch that uses `venv` for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
-
-#2 Here are the Docker versions I'm working with:
-
-```sh
-$ docker --version  # Docker version 18.09.2, build 6247962
-$ docker-compose --version  # docker-compose version 1.23.2, build 1110ad01
-$ docker-machine --version  # docker-machine version 0.16.1, build cce350d7
-```
 
 ## how (to run)?
 
@@ -42,3 +30,15 @@ make stop
 ```
 
 Of course, you can still work with the app locally (outside of a container, on your own operating system) by running `poetry install` and starting the server with `make flask`.
+
+## FYI
+
+* I have [another branch that uses `venv` for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
+* I also have [another project that does the same thing but adds a database](https://github.com/zachvalenta/docker-flask-sqlite-skeleton).
+* Here are the Docker versions I'm working with:
+
+```sh
+$ docker --version  # Docker version 18.09.2, build 6247962
+$ docker-compose --version  # docker-compose version 1.23.2, build 1110ad01
+$ docker-machine --version  # docker-machine version 0.16.1, build cce350d7
+```
