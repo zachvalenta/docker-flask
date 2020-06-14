@@ -1,6 +1,6 @@
 # overview
 
-The bare bones for a Dockerized Flask app.
+The bare bones to Dockerize Flask.
 
 ## why does this exist?
 
@@ -51,7 +51,7 @@ make flask
 ## FYI
 
 * I have [another branch that uses Poetry for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
-* I also have [another project that does the same thing but with the single additional complexity of a database](https://github.com/zachvalenta/docker-flask-sqlite-skeleton).
+* I also have [another project that does the same thing but adds a database](https://github.com/zachvalenta/docker-flask-sqlite-skeleton).
 * Here are the Docker versions I'm working with:
 
 ```sh
