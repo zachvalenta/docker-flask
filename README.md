@@ -50,9 +50,9 @@ make flask
 
 ## FYI
 
-#1 I have [another branch that uses Poetry for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
-
-#2 Here are the Docker versions I'm working with:
+* I have [another branch that uses Poetry for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
+* I also have [another project that does the same thing but with the single additional complexity of a database](https://github.com/zachvalenta/docker-flask-sqlite-skeleton).
+* Here are the Docker versions I'm working with:
 
 ```sh
 $ docker --version  # Docker version 18.09.2, build 6247962
