@@ -2,6 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/index')
+@app.route('/healthcheck')
 def index():
-    return 'hello from inside your Docker container'
+    return "app runnning", 200
