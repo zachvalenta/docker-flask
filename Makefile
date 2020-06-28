@@ -5,7 +5,7 @@ help:
 	@echo "🍶 FLASK"
 	@echo
 	@echo "flask:       start app"
-	@echo "index:       hit index route"
+	@echo "hc:          healthcheck"
 	@echo
 	@echo "🚢 DOCKER"
 	@echo
@@ -28,8 +28,8 @@ help:
 flask:
 	source venv/bin/activate; export FLASK_APP=app; export FLASK_ENV=development; flask run
 
-index:
-	open http://localhost:5000/index
+hc:
+	http http://localhost:5000/healthcheck
 
 #
 # 🚢 DOCKER
