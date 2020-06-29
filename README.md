@@ -33,9 +33,15 @@ Of course, you can still work with the app locally (outside of a container, on y
 
 ## FYI
 
-* I have [another branch that uses `venv` for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
-* I also have [another project that does the same thing but adds a database](https://github.com/zachvalenta/docker-flask-sqlite-skeleton).
-* Here are the Docker versions I'm working with:
+I have [another branch that uses `venv` for dependency management](https://github.com/zachvalenta/docker-flask-skeleton/tree/poetry).
+
+I have a few other projects like this:
+
+* [Docker + Flask + Postgres](https://github.com/zachvalenta/docker-flask-postgres)
+* [Docker + Flask + SQLite](https://github.com/zachvalenta/docker-flask-sqlite)
+* [Docker + Flask + SQLite + gunicorn](https://github.com/zachvalenta/docker-flask-sqlite-gunicorn)
+
+Here are the Docker versions I'm working with:
 
 ```sh
 $ docker --version  # Docker version 18.09.2, build 6247962
