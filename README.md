@@ -22,8 +22,8 @@ make image
 # run container using image
 make start
 
-# hit Flask server running within container
-make index
+# hit Flask server healthcheck
+make hc
 
 # stop container
 make stop
