@@ -11,10 +11,12 @@ help:
 	@echo
 	@echo "🚢 DOCKER"
 	@echo
-	@echo "image:       build image"
+	@echo "build:       build image"
+	@echo "rebuild:     rebuild image after stopping/removing containers of same name"
 	@echo "start:       start container"
 	@echo "stop:        stop container"
 	@echo "restart:     restart container"
+	@echo "rm:          remove container"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
@@ -37,17 +39,23 @@ hc:
 # 🚢 DOCKER
 #
 
-image:
+build:
+	docker build -t $(name) .
+
+rebuild: stop rm
 	docker build -t $(name) .
 
 start:
 	docker run --name $(name) -p 5000:5000 $(name)
 
 stop:
-	docker stop $(name); docker ps -a
+	docker stop $(name)
 
 restart:
 	docker start $(name); docker logs $(name) --follow
+
+rm: stop
+	docker rm $(name)
 
 #
 # 📦 DEPENDENCIES
