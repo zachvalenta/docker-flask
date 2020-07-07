@@ -1,5 +1,7 @@
 .PHONY: test
 
+name = "docker-flask-skeleton"
+
 help:
 	@echo
 	@echo "🍶 FLASK"
@@ -21,23 +23,31 @@ help:
 	@echo "deps:        list prod dependencies"
 	@echo
 
+#
+# 🍶 FLASK
+#
+
 flask:
 	source venv/bin/activate; export FLASK_APP=app; export FLASK_ENV=development; flask run
 
 hc:
 	http http://localhost:5000/healthcheck
 
+#
+# 🚢 DOCKER
+#
+
 image:
-	docker build -t docker-flask-skeleton .
+	docker build -t $(name) .
 
 start:
-	docker run --name docker-flask-skeleton -p 5000:5000 docker-flask-skeleton
+	docker run --name $(name) -p 5000:5000 $(name)
 
 stop:
-	docker stop docker-flask-skeleton; docker ps -a
+	docker stop $(name); docker ps -a
 
 restart:
-	docker restart docker-flask-skeleton; docker ps
+	docker start $(name); docker logs $(name) --follow
 
 export:
 	poetry export -f requirements.txt > requirements.txt
