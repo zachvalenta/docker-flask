@@ -49,6 +49,10 @@ stop:
 restart:
 	docker start $(name); docker logs $(name) --follow
 
+#
+# 📦 DEPENDENCIES
+#
+
 export:
 	poetry export -f requirements.txt > requirements.txt
 
