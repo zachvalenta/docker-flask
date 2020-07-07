@@ -47,7 +47,7 @@ stop:
 	docker stop $(name); docker ps -a
 
 restart:
-	docker restart $(name); docker ps
+	docker start $(name); docker logs $(name) --follow
 
 #
 # 📦 DEPENDENCIES
