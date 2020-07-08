@@ -1,6 +1,6 @@
 FROM python:3-alpine
 LABEL maintainer Zach Valenta
-ARG project_name=docker-flask-skeleton
+ARG project_name=docker-flask
 ENV PYTHONDONTWRITEBYTECODE 1
 WORKDIR /$project_name
 COPY requirements.txt /$project_name/

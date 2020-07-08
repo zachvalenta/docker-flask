@@ -1,6 +1,6 @@
 .PHONY: test
 
-name = "docker-flask-skeleton"
+name = "docker-flask"
 
 help:
 	@echo
