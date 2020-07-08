@@ -2,7 +2,7 @@
 
 The bare bones to Dockerize Flask.
 
-## why (does this exist)?
+## why does this exist?
 
 Most 'hello world' examples of a Dockerized Flask app suffer from one of these problems:
 
@@ -11,7 +11,7 @@ Most 'hello world' examples of a Dockerized Flask app suffer from one of these p
 
 This repo, on the other hand, aims to be a minimal, viable, and complete, and nothing more.
 
-## how (to run)?
+## how to run?
 
 To run as a container, have DockerCE installed and use the `Makefile`:
 
