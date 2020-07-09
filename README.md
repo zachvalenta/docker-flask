@@ -17,7 +17,7 @@ To run as a container, have DockerCE installed and use the `Makefile`:
 
 ```sh
 # create image
-make image
+make build
 
 # run container using image
 make start
