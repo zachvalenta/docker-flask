@@ -32,7 +32,7 @@ help:
 #
 
 flask:
-	source venv/bin/activate; export FLASK_APP=app; export FLASK_ENV=development; flask run
+	export FLASK_APP=app; export FLASK_ENV=development; poetry run flask run
 
 hc:
 	http http://localhost:5000/healthcheck
