@@ -1,5 +1,4 @@
 .PHONY: test
-
 name = "docker-flask-skeleton"
 
 help:
@@ -17,6 +16,7 @@ help:
 	@echo "stop:        stop container"
 	@echo "restart:     restart container"
 	@echo "rm:          remove container"
+	@echo "shell:       open shell inside container"
 	@echo "list:        list all containers/images/volumes"
 	@echo "clean:       stop containers, rm all containers/images/volumes"
 	@echo
@@ -58,6 +58,9 @@ restart:
 
 rm: stop
 	docker rm $(name)
+
+shell:
+	docker exec -it $(name) sh
 
 list:
 	docker ps -a; docker images; docker volume ls
