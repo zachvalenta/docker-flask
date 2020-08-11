@@ -60,7 +60,7 @@ rm: stop
 	docker rm $(name)
 
 shell:
-	docker exec -it $(name) sh
+	docker exec -it $(name) bash
 
 list:
 	docker ps -a; docker images; docker volume ls
